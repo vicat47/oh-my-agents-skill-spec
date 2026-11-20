@@ -1,0 +1,14 @@
+name: oh-my-agents-skill-spec
+version: 0.1.0
+description: Skill 规范 + 可运行示例
+author: vicat
+targets:
+- opencode
+
+dependencies:
+  apm:
+    - git: https://gitea.nas.vicat.top:5001/ai-projects/home-vicat-skills.git
+      path: packages/documentation
+  mcp: []
+includes: auto
+scripts: {}

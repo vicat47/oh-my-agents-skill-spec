@@ -1,0 +1,5 @@
+#:schema ../schemas/project.schema.json
+
+# 名称与色值的搭配均为虚构示例。
+[palette]
+mint = "#83D6AE"

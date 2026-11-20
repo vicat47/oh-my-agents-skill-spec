@@ -1,0 +1,12 @@
+{
+  "name": "lookup-color",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "24.x" },
+  "scripts": { "test": "node --test test/lookup.test.ts" },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "smol-toml": "^1.4.2"
+  }
+}

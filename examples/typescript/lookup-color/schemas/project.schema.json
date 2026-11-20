@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "调色板示例项目",
+  "type": "object",
+  "required": ["palette"],
+  "properties": {
+    "palette": {
+      "type": "object",
+      "propertyNames": { "minLength": 1 },
+      "additionalProperties": { "$ref": "hex-color.schema.json" }
+    }
+  }
+}

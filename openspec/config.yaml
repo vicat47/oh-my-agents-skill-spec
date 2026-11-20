@@ -1,0 +1,46 @@
+schema: spec-driven
+
+context: |
+  语言：中文
+  所有制品必须用 中文 编写。
+  OpenSpec 结构标题与 SHALL/MUST 关键字保持英文。
+
+  项目：oh-my-agents-skill-spec — Agent Skill 生产规范、开发 Harness 与最小示例。
+  技术栈：Markdown（规范/文档）；TypeScript / Node.js 与 Go（可运行示例）。
+  工具链：APM 0.36（skill 部署）、OpenSpec-cn 2.0.0。
+
+  目录结构：
+    docs/adr/            架构决策记录
+    docs/research/       调研与选型
+    docs/agent-sessions/ 工作与排查记录
+    openspec/changes/    变更提案
+    openspec/specs/      编制过程中的能力稿，不是产品入口
+    spec/                面向 skill 作者的规范产物
+    skills/vicat-skill-creator/ 开发 Harness 源包
+    examples/typescript/ TypeScript 示例（按需创建）
+    examples/go/         Go 示例（按需创建）
+
+  代码风格：Go 使用 gofmt；TypeScript 沿用示例内 ESLint/Prettier 配置。
+  规范与示例冲突时先复现；以已定契约检验实现，契约变更同步更新规范和示例。
+
+# 按产出物的规则（可选）
+# 为特定产出物添加自定义规则。
+# 示例：
+#   rules:
+#     proposal:
+#       - 提案保持在 500 字以内
+#       - 始终说明范围之外的内容
+#     tasks:
+#       - 将任务拆分为每次不超过 2 小时的工作块
+
+# 按操作的指南（可选）
+# 为 apply 和 archive 操作添加咨询性指南。
+# 此段落独立于上述的产出物规则。
+# 示例：
+#   operations:
+#     apply:
+#       guidance:
+#         - 测试摘要保持简洁
+#     archive:
+#       guidance:
+#         - 完成前总结归档结果

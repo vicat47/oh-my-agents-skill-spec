@@ -1,0 +1,9 @@
+# APM / OpenSpec 部署产物（由工具生成，从 lockfile 重建，不入库）
+.agents/
+.opencode/
+apm_modules/
+apm.lock.yaml
+
+# 本地环境文件与运行时产物（D1=不入库时含 opencode.json）
+opencode.json
+*.log
